@@ -5,5 +5,6 @@
 
 # Write your MySQL query statement below
 
-select firstName,lastName,city, state from Person Left join Address
-ON Person.personId = Address.personId;
+
+
+SELECT p.firstName ,p.lastName ,a.city,a.state FROM Person p LEFT JOIN Address a ON p.personId=a.personId;
