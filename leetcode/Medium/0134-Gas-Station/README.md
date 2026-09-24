@@ -76,8 +76,8 @@ class Solution {
 
             // int diff = gas[i] - cost[i];
 
-            total += gas[i] - cost[i];
-            tank += gas[i] - cost[i];
+            total = total+ gas[i] - cost[i];
+            tank =tank + gas[i] - cost[i];
 
             if (tank < 0) {
                 start = i + 1;
