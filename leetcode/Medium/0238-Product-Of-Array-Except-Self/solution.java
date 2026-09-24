@@ -8,8 +8,7 @@ class Solution {
         
 
         int n=nums.length;
-         int [] ans=new int[n];
-        if(n==0) return ans;
+
         int []prefix=new int[n];
         int []suffix=new int[n];
        
@@ -28,11 +27,11 @@ class Solution {
         for(int i=0;i<n;i++){
 
             int prod=prefix[i]*suffix[i];
-            ans[i]=prod;
+            nums[i]=prod;
 
 
         }
 
-           return ans;
+           return nums;
     }
 }
