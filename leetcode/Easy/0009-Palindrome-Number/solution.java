@@ -5,25 +5,18 @@
 
 class Solution {
     public boolean isPalindrome(int x) {
-     
-String s = String.valueOf(x);
+        
+        int num=x;
+        int res=0;
 
-int[] arr = new int[s.length()];
+        while(num>0){
 
-for (int i = 0; i < s.length(); i++) {
-    arr[i] = s.charAt(i) - '0';
-}
+            int rem=num%10;
+             res=res*10+rem;
+             num=num/10;
 
-int n=arr.length;
- int i=0;
- int j=n-1;
-while(i<=j){
-    if(arr[i]!=arr[j]) return false;
+        }
 
-    i++;
-    j--;
-}
-
-return true;
+        return res==x;
     }
 }
