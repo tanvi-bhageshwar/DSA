@@ -14,10 +14,9 @@ class Solution {
             buyPrice=prices[i];
            
         }
-        if(prices[i]!=buyPrice){
       int profit=prices[i]-buyPrice;
             maxProfit=Math.max(profit,maxProfit);
-        }
+        
 
        }
         return maxProfit;
